@@ -2,14 +2,12 @@
     margin: 0px;
     padding: 0px;
 }
-
 header h1 {
     text-align: center;
     text-transform: uppercase;
     font-size: 8rem;
     margin-bottom: 50px;
 }
-
 main{
     max-width: 1200px;
     height: 100%;
@@ -23,31 +21,32 @@ main{
     font-size: 1.5rem;
     text-align: center;
 }
+.parcela-titulo {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.8rem;
+}
 .resultados{
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    gap: 90px;
+    gap: 60px;
     margin-top: 80px;
     margin-bottom: 100px;
 }
-
 .resultado {
     border: 1px solid black;
-    width: 250px;
-    height: 350px;
+    width: 100%;
+    display: block;
 }
 
-.parcela-titulo {
-    text-align: center;
-    padding-top: 20px;
-    font-size: 2rem;
+.resultado p{
+    font-size: 1.2rem;
 }
 
 input[type=number]::-webkit-inner-spin-button { 
     -webkit-appearance: none;
 }
-
 input[type=number] { 
    -moz-appearance: textfield;
    appearance: textfield;
