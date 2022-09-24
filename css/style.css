@@ -11,17 +11,17 @@ header h1 {
     margin-bottom: 50px;
 }
 
-main{
+main {
     max-width: 900px;
     height: 100%;
     margin: 0 auto;
 }
 
-header h1{
+header h1 {
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background-color: rgb(233, 237, 239);
 }
 
@@ -32,16 +32,16 @@ body{
     width: 200px;
 }
 
-.form{
+.form {
     margin: 0 auto;
 }
 
-.valor{
+.valor {
     display: inline-block;
     width: 200px;
     height: 50px;
     text-align: center;
-    font-size: 1.8rem;   
+    font-size: 1.8rem;
 }
 
 .parcela-titulo {
@@ -51,7 +51,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.resultados{
+.resultados {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -71,48 +71,58 @@ body{
     opacity: 1;
     transition: opacity 0.5s ease-in;
 }
-.resultado.desativado{
+
+.resultado.desativado {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
 
 
-.resultado p{
+.resultado p {
     font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
     border-bottom: 1px solid rgba(125, 125, 125, 0.273);
 }
 
-.resultado span{
+.resultado span {
     margin-left: 10px;
     font-family: 'Poppins', sans-serif;
 }
-.resultado .totalComAcrescimo{
+
+.resultado .totalComAcrescimo {
     color: red;
 }
+#parcela-8x {
+    border: 3px solid rgba(255, 234, 47, 0.631);
+    box-shadow: 0 0 8px 5px rgb(255, 168, 47);
+}
+
 @media (max-width: 700px) {
-    .resultados{
+    .resultados {
         display: flex;
         flex-direction: column;
     }
-    .resultado{
+
+    .resultado {
         width: 300px;
     }
-    .resultado p{
+
+    .resultado p {
         font-size: 0.8rem;
     }
-    header h1{
+
+    header h1 {
         font-size: 5rem;
     }
 }
 
-input[type=number]::-webkit-inner-spin-button { 
+input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
-input[type=number] { 
-   -moz-appearance: textfield;
-   appearance: textfield;
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 input {
@@ -120,7 +130,7 @@ input {
     border-radius: 4px;
     box-shadow: 0 0 9px 1px rgb(209, 209, 209);
 }
-input::placeholder{
+
+input::placeholder {
     color: rgb(218, 218, 218);
 }
-
