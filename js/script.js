@@ -1,4 +1,5 @@
 const valor = document.querySelector('.valor')
+
 const tabelaJuros4x = document.querySelector('.txjuros4x')
 const tabelaParcela4x = document.querySelector('.vlparcela4x')
 const tabelaAcrescimo4x = document.querySelector('.acrescimo4x')
@@ -31,6 +32,13 @@ function handleChange4x(e){
   tabelaParcela4x.innerHTML = vlParcela4x.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})  
   tabelaAcrescimo4x.innerHTML = acrescimo4x.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})  
   tabelaTotalComAcrescimo4x.innerHTML = totalComAcrescimo.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+  if(valorInserido === 0){
+    tabelaJuros4x.innerHTML = ""
+    tabelaParcela4x.innerHTML = ""
+    tabelaAcrescimo4x.innerHTML = ""
+    tabelaTotalComAcrescimo4x.innerHTML = ""
+  }
 }
 
 function handleChange5x(e){
@@ -43,6 +51,13 @@ function handleChange5x(e){
     tabelaParcela5x.innerHTML = vlParcela5x.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})   
     tabelaAcrescimo5x.innerHTML = acrescimo5x.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})    
     tabelaTotalComAcrescimo5x.innerHTML = totalComAcrescimo.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+    if(valorInserido === 0){
+      tabelaJuros5x.innerHTML = ""
+      tabelaParcela5x.innerHTML = ""
+      tabelaAcrescimo5x.innerHTML = ""
+      tabelaTotalComAcrescimo5x.innerHTML = ""
+    }
   }
 
   function handleChange7x(e){
@@ -55,6 +70,13 @@ function handleChange5x(e){
     tabelaParcela7x.innerHTML = vlParcela7x.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})    
     tabelaAcrescimo7x.innerHTML = acrescimo7x.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})    
     tabelaTotalComAcrescimo7x.innerHTML = totalComAcrescimo.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+    if(valorInserido === 0){
+      tabelaJuros7x.innerHTML = ""
+      tabelaParcela7x.innerHTML = ""
+      tabelaAcrescimo7x.innerHTML = ""
+      tabelaTotalComAcrescimo7x.innerHTML = ""
+    }
   }
 
   function handleChange8x(e){
@@ -67,7 +89,20 @@ function handleChange5x(e){
     tabelaParcela8x.innerHTML = vlParcela8x.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})    
     tabelaAcrescimo8x.innerHTML = acrescimo8x.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})    
     tabelaTotalComAcrescimo8x.innerHTML = totalComAcrescimo.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+    
+    if(valorInserido === 0){
+      const container8 = document.querySelector('#parcela-8x')
+      container8.classList.add("desativado")
+    }
+    if(valorInserido > 1){
+      const container8 = document.querySelector('#parcela-8x')
+      container8.classList.remove("desativado")
+    }
   }
+
+
+ 
+
 valor.addEventListener('keyup', handleChange4x)
 valor.addEventListener('keyup', handleChange5x)
 valor.addEventListener('keyup', handleChange7x)
