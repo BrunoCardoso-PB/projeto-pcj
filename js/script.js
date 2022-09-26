@@ -33,7 +33,7 @@ function handleChange(e) {
   const valorInseridoTeste = e.target.value;
   const valorInserido = parseFloat(valorInseridoTeste.replace(",","."))
 
-  const txJuros4x = valorInserido * 0.0399;
+  const txJuros4x = valorInserido * 0.0499;
   const vlParcela4x = (valorInserido / 4) + txJuros4x;
   const acrescimo4x = txJuros4x * 4;
   const totalComAcrescimo4x = valorInserido + acrescimo4x;
@@ -43,7 +43,7 @@ function handleChange(e) {
   const acrescimo5x = txJuros5x * 5;
   const totalComAcrescimo5x = valorInserido + acrescimo5x;
 
-  const txJuros7x = valorInserido * 0.0799;
+  const txJuros7x = valorInserido * 0.0899;
   const vlParcela7x = (valorInserido / 7) + txJuros7x;
   const acrescimo7x = txJuros7x * 7;
   const totalComAcrescimo7x = valorInserido + acrescimo7x;
