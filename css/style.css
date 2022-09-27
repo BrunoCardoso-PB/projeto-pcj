@@ -3,6 +3,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
+header {
+    margin-top: 40px;
+}
 
 header h1 {
     text-align: center;
@@ -72,7 +75,7 @@ body {
     transition: opacity 0.5s ease-in;
 }
 footer {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .resultado.desativado {
@@ -104,6 +107,9 @@ footer {
     .resultados {
         display: flex;
         flex-direction: column;
+    }
+    .valor-container{
+        margin-top: 0;
     }
 
     .resultado {
