@@ -41,17 +41,17 @@ function handleChange(e) {
 
   const txJuros5x = 0.15455;
   const acrescimo5x = valorInserido * txJuros5x; 
-  const vlParcela5x = (valorInserido + acrescimo4x) / 5;    
+  const vlParcela5x = (valorInserido + acrescimo5x) / 5;    
   const totalComAcrescimo5x = valorInserido + acrescimo5x;
 
   const txJuros7x = 0.39036;
   const acrescimo7x = valorInserido * txJuros7x; 
-  const vlParcela7x = (valorInserido + acrescimo4x) / 7;    
+  const vlParcela7x = (valorInserido + acrescimo7x) / 7;    
   const totalComAcrescimo7x = valorInserido + acrescimo7x;
 
   const txJuros8x = 0.44486;
   const acrescimo8x = valorInserido * txJuros8x; 
-  const vlParcela8x = (valorInserido + acrescimo4x) / 8;    
+  const vlParcela8x = (valorInserido + acrescimo8x) / 8;    
   const totalComAcrescimo8x = valorInserido + acrescimo8x;
 
  
@@ -96,7 +96,7 @@ function handleChange(e) {
     { style: "currency", currency: "BRL" }
   ); 
  
-  
+
   tabelaParcela8x.innerHTML = vlParcela8x.toLocaleString("pt-BR", {
     style: "currency",
     currency: "BRL",
