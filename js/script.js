@@ -33,30 +33,28 @@ function handleChange(e) {
   const valorInseridoTeste = e.target.value;
   const valorInserido = parseFloat(valorInseridoTeste.replace(",","."))
 
-  const txJuros4x = valorInserido * 0.0499;
-  const vlParcela4x = (valorInserido / 4) + txJuros4x;
-  const acrescimo4x = txJuros4x * 4;
+
+  const txJuros4x = 0.12779;
+  const acrescimo4x = valorInserido * txJuros4x; 
+  const vlParcela4x = (valorInserido + acrescimo4x) / 4;    
   const totalComAcrescimo4x = valorInserido + acrescimo4x;
 
-  const txJuros5x = valorInserido * 0.0499;
-  const vlParcela5x = (valorInserido / 5) + txJuros5x;
-  const acrescimo5x = txJuros5x * 5;
+  const txJuros5x = 0.15455;
+  const acrescimo5x = valorInserido * txJuros5x; 
+  const vlParcela5x = (valorInserido + acrescimo4x) / 5;    
   const totalComAcrescimo5x = valorInserido + acrescimo5x;
 
-  const txJuros7x = valorInserido * 0.0899;
-  const vlParcela7x = (valorInserido / 7) + txJuros7x;
-  const acrescimo7x = txJuros7x * 7;
+  const txJuros7x = 0.39036;
+  const acrescimo7x = valorInserido * txJuros7x; 
+  const vlParcela7x = (valorInserido + acrescimo4x) / 7;    
   const totalComAcrescimo7x = valorInserido + acrescimo7x;
 
-  const txJuros8x = valorInserido * 0.0899;
-  const vlParcela8x = (valorInserido / 8) + txJuros8x;
-  const acrescimo8x = txJuros8x * 8;
+  const txJuros8x = 0.44486;
+  const acrescimo8x = valorInserido * txJuros8x; 
+  const vlParcela8x = (valorInserido + acrescimo4x) / 8;    
   const totalComAcrescimo8x = valorInserido + acrescimo8x;
 
-  tabelaJuros4x.innerHTML = txJuros4x.toLocaleString("pt-BR", {
-    style: "currency",
-    currency: "BRL",
-  });
+ 
   tabelaParcela4x.innerHTML = vlParcela4x.toLocaleString("pt-BR", {
     style: "currency",
     currency: "BRL",
@@ -69,10 +67,8 @@ function handleChange(e) {
     "pt-BR",
     { style: "currency", currency: "BRL" }
   );  
-  tabelaJuros5x.innerHTML = txJuros5x.toLocaleString("pt-BR", {
-    style: "currency",
-    currency: "BRL",
-  });
+ 
+
   tabelaParcela5x.innerHTML = vlParcela5x.toLocaleString("pt-BR", {
     style: "currency",
     currency: "BRL",
@@ -85,10 +81,8 @@ function handleChange(e) {
     "pt-BR",
     { style: "currency", currency: "BRL" }
   );
-  tabelaJuros7x.innerHTML = txJuros7x.toLocaleString("pt-BR", {
-    style: "currency",
-    currency: "BRL",
-  });
+ 
+
   tabelaParcela7x.innerHTML = vlParcela7x.toLocaleString("pt-BR", {
     style: "currency",
     currency: "BRL",
@@ -101,10 +95,8 @@ function handleChange(e) {
     "pt-BR",
     { style: "currency", currency: "BRL" }
   ); 
-  tabelaJuros8x.innerHTML = txJuros8x.toLocaleString("pt-BR", {
-    style: "currency",
-    currency: "BRL",
-  });
+ 
+  
   tabelaParcela8x.innerHTML = vlParcela8x.toLocaleString("pt-BR", {
     style: "currency",
     currency: "BRL",
