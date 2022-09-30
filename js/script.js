@@ -53,10 +53,15 @@ function handleChange(e) {
   const acrescimo8x = txJuros8x * 8;
   const totalComAcrescimo8x = valorInserido + acrescimo8x;
 
+
+  
   tabelaJuros4x.innerHTML = txJuros4x.toLocaleString("pt-BR", {
     style: "currency",
     currency: "BRL",
   });
+
+
+
   tabelaParcela4x.innerHTML = vlParcela4x.toLocaleString("pt-BR", {
     style: "currency",
     currency: "BRL",
