@@ -75,3 +75,5 @@ export default function chamada() {
 
   valor.addEventListener('keyup', handleChange);
 }
+
+console.log('teste')
